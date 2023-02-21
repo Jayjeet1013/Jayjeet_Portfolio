@@ -10,7 +10,7 @@ export default function Home() {
     <>
       
     <div>
-     <h1 className='text-3xl text-red-500'> hello kaise hai aap sabh thik hai na</h1>
+     <h1 className='text-3xl text-red-500'> hello kaise hai</h1>
     </div>
     </>
   )
