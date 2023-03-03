@@ -11,9 +11,12 @@ const Navbar = () => {
         </h1>
         </Link>
         <div>
-            <ul>
+            <ul className='hidden md:flex'>
                 <Link href="/#home">
-                    <li className='ml-10 text-sm uppercase cursor-pointer duration-200 ease-out'>home</li>
+                    <li className='ml-10 text-sm uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider '>home</li>
+                </Link>
+                <Link href="/#home">
+                    <li className='ml-10 text-sm uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider '>home</li>
                 </Link>
             </ul>
         </div>
