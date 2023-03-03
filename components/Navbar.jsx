@@ -90,7 +90,12 @@ const [navigation,setNavigation]=useState(false);
  
             <div className="mt-24 flex flex-col h-fit gap-20">
             <ul className="uppercase">
-
+            {links.map (({id,link})=>(
+                 <Link key={id} href={`/#${link}`}>
+            <li className="py-4 text-2xl tracking-wider cursor-pointer">{link}</li>
+           </Link>
+            ))}
+       
             </ul>
 
             </div>
