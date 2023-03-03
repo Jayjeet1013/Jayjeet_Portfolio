@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaTwitter,
   FaLinkedin,
+
 } from "react-icons/fa";
 
 
@@ -97,7 +98,24 @@ const [navigation,setNavigation]=useState(false);
             ))}
        
             </ul>
+             <div>
+                <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
 
+                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
+                    <FaLinkedin size={25}/>
+                </div>
+                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
+                    <FaTwitter size={25}/>
+                </div>
+                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
+                    <FaFacebook size={25}/>
+                </div>
+                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
+                    <FaGithub size={25}/>
+                </div>
+
+                </div>
+             </div>
             </div>
  
       </div>
