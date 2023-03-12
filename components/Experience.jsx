@@ -14,7 +14,7 @@ const Experience = () => {
 <div className='max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left  '>
                         <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold" >experience</h2>
                         <p className='py-4'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore iure itaque natus facere excepturi nulla voluptates ipsam numquam sequi. Quam accusantium earum cumque!
+                                ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore iure itaque natus facere excepturi nulla voluptates ipsam numquam sequi. Quam accusantium earum cumque!
                         </p>
 
     </div>
