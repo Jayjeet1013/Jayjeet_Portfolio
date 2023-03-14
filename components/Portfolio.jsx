@@ -3,8 +3,8 @@ import React from 'react'
 import Image from 'next/image';
 import { MdExpandMore } from 'react-icons/md';
 
-import installNode from '../public/portfolio/installNode.png'
-import reactWeather from '../public/portfolio/reactWeather.png'
+import installNode from '../public/assets/portfolio/installNode.png'
+import reactWeather from '../public/assets/portfolio/reactWeather.png'
 
 
 const Portfolio = () => {

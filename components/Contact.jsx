@@ -49,7 +49,7 @@ const Contact = () => {
 
           <div className="w-full md:w-1/2 h-full rounded-xl p-4">
             <div className="p-4 text-left">
-              <form action="">
+              <form action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744" method="POST">
                 <div className="grid md:grid-cols-2 gap-4  w-full  py-2 ">
                   <div className="flex flex-col">
                     <label className="capitalize text-sm py-2 text-slate-600  font-light ">
