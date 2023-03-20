@@ -29,7 +29,7 @@ return sub;
     },
     {
       id: 2,
-      link: "portfolio",
+      link: "projects",
     },
     {
       id: 3,

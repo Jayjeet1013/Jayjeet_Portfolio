@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { MdExpandMore } from 'react-icons/md';
 
 import installNode from '../public/assets/portfolio/installNode.png'
-import reactWeather from '../public/assets/portfolio/reactWeather.png'
+import reactWeather from '../public/assets/portfolio/cahidapp.jpeg'
 
 
 const Portfolio = () => {
@@ -14,25 +14,27 @@ const Portfolio = () => {
                 id:1,
                 title:"react weather app",
                 imageSrc: reactWeather,
-                url:"react-weather",
+                url:"https://chaipay.netlify.app/",
+                description:"use for give the details of weather made  ",
         },
         {
                 id:2,
                 title:"installNode",
                 imageSrc:installNode,
                 url:"installNode",
+                description:" used to make backed of website",
         },
  ];
 
-        return <div id='portfolio' className='w-full'>
+        return <div id='projects' className='w-full'>
                 <div className='max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left  '>
-                        <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold" >portfolio</h2>
+                        <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold" >projects</h2>
                         <p className='py-4'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore iure itaque natus facere excepturi nulla voluptates ipsam numquam sequi. Quam accusantium earum cumque!
+                                These are my some projects in Web2 and Web3.
                         </p>
                         <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
 
-                                {portfolios.map(({id,title,imageSrc,url})=>(
+                                {portfolios.map(({id,title,imageSrc,url,description})=>(
                                        <Link key={id} href={`/portfolio/${url}`}>
 
                                        <div className='cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md'>
@@ -40,6 +42,7 @@ const Portfolio = () => {
                                         <h2 className='text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4'>
                                                 {title}
                                         </h2>
+                                        <p className='text-center text-red-300'>{description}</p>
                                        </div>
 
                                        </Link>
@@ -48,14 +51,14 @@ const Portfolio = () => {
                         </div>
                         <div className='flex items-center justify-center'>
 
-                        <Link href="/portfolio">
+                        {/* <Link href="/portfolio">
       <div className='gruop flex items-center justify-center my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer'>
         All Projects 
         <span className='-rotate-90 duration-100 ease-in group hover:translate-x-5'>
           <MdExpandMore size={25}/>
         </span>
       </div>
-     </Link>
+     </Link> */}
                                   
                         </div>
                 </div>
