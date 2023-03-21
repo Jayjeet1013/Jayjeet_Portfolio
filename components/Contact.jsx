@@ -5,7 +5,7 @@ import Link from "next/link";
 import {
   FaBars,
   FaTimes,
-  FaFacebook,
+  FaInstagram,
   FaGithub,
   FaTwitter,
   FaLinkedin,
@@ -39,15 +39,19 @@ const Contact = () => {
              
               </div>
               </Link>
+              <Link href='https://twitter.com/Jayjeet_100'>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaTwitter size={25} />
               </div>
+              </Link>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaFacebook size={25} />
+                <FaInstagram size={25} />
               </div>
+              <Link href='https://github.com/Jayjeet1013'>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaGithub size={25} />
               </div>
+              </Link>
             </div>
           </div>
 

@@ -14,7 +14,7 @@ const Portfolio = () => {
                 id:1,
                 title:"react weather app",
                 imageSrc: reactWeather,
-                url:"https://chaipay.netlify.app/",
+                url:'https://chaipay.netlify.app/',
                 description:"use for give the details of weather made  ",
         },
         {
