@@ -1,6 +1,7 @@
 import React from "react";
 import contactus from "../public/assets/contactus.jpg";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaBars,
   FaTimes,
@@ -32,9 +33,12 @@ const Contact = () => {
             </p>
 
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
+              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/'>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
                 <FaLinkedin size={25} />
+             
               </div>
+              </Link>
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaTwitter size={25} />
               </div>
