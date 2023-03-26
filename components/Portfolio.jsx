@@ -14,19 +14,19 @@ const Portfolio = () => {
                 id:1,
                 title:"react weather app",
                 imageSrc: reactWeather,
-                url:'https://chaipay.netlify.app/',
+                url:"https://chaipay.netlify.app/",
                 description:"use for give the details of weather made  ",
         },
         {
                 id:2,
                 title:"installNode",
                 imageSrc:installNode,
-                url:"installNode",
+                url:"https://www.youtube.com/watch?v=zokKTsRx7QA",
                 description:" used to make backed of website",
         },
  ];
 
-        return <div id='projects' className='w-full'>
+        return <div id='portfolio' className='w-full'>
                 <div className='max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left  '>
                         <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold" >projects</h2>
                         <p className='py-4'>
@@ -35,7 +35,7 @@ const Portfolio = () => {
                         <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
 
                                 {portfolios.map(({id,title,imageSrc,url,description})=>(
-                                       <Link key={id} href={`/portfolio/${url}`}>
+                                       <Link key={id} href={`/portfolio/${url}`} >
 
                                        <div className='cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md'>
                                          <Image src={imageSrc} alt={title} className='rounded-md duration-200 hover:scale-110'/>
