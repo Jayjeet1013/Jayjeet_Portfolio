@@ -27,9 +27,8 @@ const Contact = () => {
               className="rounded-xl"
             />
             <p className="pt-2 pb-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              neque, harum iusto fugit placeat dignissimos quia nihil,
-              reprehenderit deleniti optio alias nulla voluptates.
+             For any queries Contact here
+             
             </p>
 
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
