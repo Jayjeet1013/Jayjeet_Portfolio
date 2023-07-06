@@ -14,14 +14,14 @@ const Portfolio = () => {
                 id:1,
                 title:"react weather app",
                 imageSrc: reactWeather,
-                url:"https://chaipay.netlify.app/",
+                href: "https://chaipay.netlify.app",
                 description:"use for give the details of weather made  ",
         },
         {
                 id:2,
                 title:"installNode",
                 imageSrc:installNode,
-                url:"https://www.youtube.com/watch?v=zokKTsRx7QA",
+                href: "https://www.youtube.com/watch?v=zokKTsRx7QA",
                 description:" used to make backed of website",
         },
  ];
@@ -34,8 +34,8 @@ const Portfolio = () => {
                         </p>
                         <div className='max-w-5xl mx-auto grid md:grid-cols-2 gap-8'>
 
-                                {portfolios.map(({id,title,imageSrc,url,description})=>(
-                                       <Link key={id} href={`/${url}`} >
+                                {portfolios.map(({id,title,imageSrc,href,description})=>(
+                                       <Link key={id} href={`/${href}`} > 
 
                                        <div className='cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md'>
                                          <Image src={imageSrc} alt={title} className='rounded-md duration-200 hover:scale-110'/>
