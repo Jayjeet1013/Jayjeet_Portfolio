@@ -55,57 +55,58 @@ const Contact = () => {
           </div>
 
           <div className="w-full md:w-1/2 h-full rounded-xl p-4">
-            <div className="p-4 text-left">
-              <form action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744" method="POST">
-                <div className="grid md:grid-cols-2 gap-4  w-full  py-2 ">
-                  <div className="flex flex-col">
-                    <label className="capitalize text-sm py-2 text-slate-600  font-light ">
-                      name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200 "
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="capitalize text-sm py-2 text-slate-600  font-light ">
-                      Phone
-                    </label>
-                    <input
-                      type="text"
-                      name="phone"
-                      className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200 "
-                    />
-                  </div>
-                  <div className="flex flex-col col-span-2">
-                    <label className="capitalize text-sm py-2 text-slate-600  font-light ">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200 "
-                    />
-                  </div>
-                  <div className="flex flex-col col-span-2">
-                    <label className="capitalize text-sm py-2 text-slate-600  font-light ">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      rows="10"
-                      className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200 "
-                    ></textarea>
-                  </div>
-                </div>
+  <div className="p-4 text-left">
+    <form action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744" method="POST">
+      <div className=" gap-4  w-full  py-2">
+        <div className="flex flex-col">
+          <label className="capitalize text-sm py-2 text-slate-600  font-light">
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
+          />
+        </div>
+        <div className="flex flex-col">
+          <label className="capitalize text-sm py-2 text-slate-600  font-light">
+            Phone
+          </label>
+          <input
+            type="text"
+            name="phone"
+            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
+          />
+        </div>
+        <div className="flex flex-col col-span-2">
+          <label className="capitalize text-sm py-2 text-slate-600  font-light">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
+          />
+        </div>
+        <div className="flex flex-col col-span-2">
+          <label className="capitalize text-sm py-2 text-slate-600  font-light">
+            Message
+          </label>
+          <textarea
+            name="message"
+            rows="6"
+            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
+          ></textarea>
+        </div>
+      </div>
 
-                <div className="flex items-center justify-center">
-                 <button className="group my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200 ">Send message</button>
-                </div>
-              </form>
-            </div>
-          </div>
+      <div className="flex items-center justify-center">
+        <button className="group my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">Send message</button>
+      </div>
+    </form>
+  </div>
+</div>
+
         </div>
       </div>
     </div>

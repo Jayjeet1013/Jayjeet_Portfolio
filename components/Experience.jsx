@@ -63,8 +63,8 @@ const Experience = () => {
 
   return (
     <div id="experience" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-44 py-16 text-center md:text-left  ">
-        <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
+      <div className="max-w-screen-xl mx-auto px-8 md:px-8 py-16 text-start md:text-left  ">
+        <h2 className="text-3xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
           experience
         </h2>
         <p className="py-4">
@@ -72,16 +72,16 @@ const Experience = () => {
           iure itaque natus facere excepturi nulla voluptates ipsam numquam
           sequi. Quam accusantium earum cumque!
         </p>
-
-        <div className="grid lg:grid-cols-4 gap-8">
+         <h2 className="py-4">Know These Techs</h2>
+        <div className="grid lg:grid-cols-6 gap-4">
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
-              className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 odd:shadow-orange-300 even:shadow-blue-400"
+              className="flex flex-col lg:flex-col gap-2 lg:gap-2 items-center  p-2 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 odd:shadow-orange-300 even:shadow-blue-400"
             >
 
-      <Image src={src} width='64px' height='64px' alt={title} />
-      <h2 className="font-light">{title}</h2>
+      <Image src={src} width={50} height={100} alt={title} />
+      <h2 className="font-light p-2">{title}</h2>
   
             </div>
           ))}

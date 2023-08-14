@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='relative' >
-        <h3 className='absolute left-1/2'>Made by @ Jayjeet Kumar</h3>
+    <div className='text-center max-w-screen-xl mx-auto p-4'>
+        <h3 >Made by @ Jayjeet Kumar</h3>
 </div>
   )
 }
