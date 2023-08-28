@@ -2,24 +2,40 @@ import React from 'react';
 import Image from 'next/image';
 import { MdExpandMore } from 'react-icons/md';
 
-import installNode from '../public/assets/portfolio/installNode.png';
-import reactWeather from '../public/assets/portfolio/cahidapp.jpeg';
+import asva from '../public/asva.png';
+import genai from '../public/genai.png';
+import nftclubdao from '../public/nftclubdao.png';
+import hashmind from '../public/hashmind.png';
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      title: 'react weather app',
-      imageSrc: reactWeather,
-      href: 'https://chaipay.netlify.app',
-      description: 'use for give the details of weather made ',
+      title: 'Gen AI',
+      imageSrc: genai,
+      href: 'https://genai-xzgd.vercel.app/',
+      description: 'Gen Ai Landpage',
     },
     {
       id: 2,
-      title: 'installNode',
-      imageSrc: installNode,
-      href: 'https://www.youtube.com/watch?v=zokKTsRx7QA',
-      description: ' used to make backed of website',
+      title: 'Asva Ventures',
+      imageSrc: asva,
+      href: 'https://asva-venture.vercel.app/',
+      description: 'BLog Website ',
+    },
+    {
+      id: 3,
+      title: 'NFT Club Dao',
+      imageSrc: nftclubdao,
+      href: 'https://nftclubdao.vercel.app/',
+      description: 'NFT Club Dao Project',
+    },
+    {
+      id: 4,
+      title: 'HashMind',
+      imageSrc: hashmind,
+      href: 'https://hashmind.vercel.app/',
+      description: ' Startup project',
     },
   ];
 
