@@ -68,9 +68,7 @@ const Experience = () => {
           experience
         </h2>
         <p className="py-4">
-          ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore
-          iure itaque natus facere excepturi nulla voluptates ipsam numquam
-          sequi. Quam accusantium earum cumque!
+       These are some tech that I know...
         </p>
          <h2 className="py-4">Know These Techs</h2>
         <div className="grid lg:grid-cols-6 gap-4">
