@@ -67,9 +67,7 @@ const Experience = () => {
         <h2 className="text-3xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
           experience
         </h2>
-        <p className="py-4">
-       These are some tech that I know...
-        </p>
+     
          <h2 className="py-4">Know These Techs</h2>
         <div className="grid lg:grid-cols-6 gap-4">
           {experiences.map(({ id, title, src }) => (
