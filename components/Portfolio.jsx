@@ -25,10 +25,10 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'NFT Club Dao',
+      title: 'Chai Dapp',
       imageSrc: nftclubdao,
-      href: 'https://nftclubdao.vercel.app/',
-      description: 'NFT Club Dao Project',
+      href: 'https://chaipay.netlify.app/',
+      description: 'Use to transfer message and ether',
     },
     {
       id: 4,
