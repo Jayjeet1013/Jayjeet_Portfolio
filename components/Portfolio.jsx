@@ -4,8 +4,9 @@ import { MdExpandMore } from 'react-icons/md';
 
 import asva from '../public/asva.png';
 import genai from '../public/genai.png';
-import nftclubdao from '../public/nftclubdao.png';
+// import nftclubdao from '../public/nftclubdao.png';
 import hashmind from '../public/hashmind.png';
+import chaidapp from '../public/chaidapp.png';
 
 const Portfolio = () => {
   const portfolios = [
@@ -26,7 +27,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'Chai Dapp',
-      imageSrc: nftclubdao,
+      imageSrc: chaidapp,
       href: 'https://chaipay.netlify.app/',
       description: 'Use to transfer message and ether',
     },
