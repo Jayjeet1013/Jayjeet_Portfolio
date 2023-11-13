@@ -16,8 +16,7 @@ Currently, I am pursuing B.Tech in computer science and trying to learn & explor
  Techs:- 
 Web3 Development.
 Web development,
-Software Blockchain Development, Cryptography.
-DSA(C++,Javascript).
+Blockchain Development, Cryptography.
 <br/><br/>
 Participated in Many Web3 Hakhathons and won some of them.
 I have attended many Web3 Events.

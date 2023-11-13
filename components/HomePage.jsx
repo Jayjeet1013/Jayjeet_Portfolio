@@ -2,15 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import heroImage from '../public/assets/heroimage.png'
 import {MdExpandMore}  from 'react-icons/md'
-
 import Link from 'next/link'
-
-
 
 
 const HomePage = () => {
   return (
-      <div  id='home'  className='h-screen w-full text-center'> 
+      <div  id='home'  className='h-screen w-full text-center'>
     <div className='max-w-screen-xl  mx-auto w-full   p-2 flex flex-col justify-around items-center'  > 
         <div className='w-72 h-72 mx-auto mt-48'>
        <Image className='rounded-3xl ' src={heroImage}/>
