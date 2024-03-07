@@ -20,6 +20,7 @@ import web3campus from "../public/web3campus.png";
 import repo from "../public/repo.png";
 import notice from "../public/notice.png";
 import spotify from "../public/spotify.png";
+import esalink from "../public/esalink.png";
 
 
 const Portfolio = () => {
@@ -150,6 +151,14 @@ const Portfolio = () => {
       liveLink: "https://dnoticeboard.netlify.app/",
       githubLink:"https://github.com/Jayjeet1013/Decentralized-Notice-Board",
       description: "Landing Page for Decentralized Notice Board",
+    },
+    {
+      id: 12,
+      title: "EsaLink",
+      imageSrc: esalink,
+      liveLink: "https://website-design-pi.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/website_design",
+      description: "Landing Page for a Esalink company",
     },
   ];
 
