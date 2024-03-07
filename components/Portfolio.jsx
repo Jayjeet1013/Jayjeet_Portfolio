@@ -10,6 +10,13 @@ import chaidapp from "../public/chaidapp.png";
 import dep from "../public/dep.png";
 import bit from "../public/bit.png";
 import hash from "../public/hashstone.png";
+import evasha from "../public/evasha.png";
+import nftclub from "../public/nftclub.png";
+import aisum from "../public/aisum.png";
+import cloth from "../public/cloth.png";
+import hoobank from "../public/hoobank.png";
+import ums from "../public/ums.png";
+import web3campus from "../public/web3campus.png";
 
 const Portfolio = () => {
   const freelance = [
@@ -41,6 +48,13 @@ const Portfolio = () => {
       href: "https://www.hashstonecapital.com/",
       description: "Digital Asset Fund in Public Markets",
     },
+    {
+      id: 5,
+      title: "UMSKajri",
+      imageSrc: ums,
+      href: "https://umskajri.vercel.app/",
+      description: "IT is a School website",
+    },
   ];
   const portfolios = [
     {
@@ -58,7 +72,56 @@ const Portfolio = () => {
       title: "Chai Dapp",
       imageSrc: chaidapp,
       liveLink: "https://chaipay.netlify.app/",
+      githubLink:"https://github.com/Jayjeet1013/CHai",
       description: "Use to transfer message and ether",
+    },
+    {
+      id: 3,
+      title: "Cloth Shop",
+      imageSrc: cloth,
+      liveLink: "https://ecommerce-lilac-three.vercel.app/",
+      githubLink: "https://github.com/Jayjeet1013/Ecommerce",
+      description: "Landing page for online CLoth shops",
+    },
+    {
+      id: 4,
+      title: "Web3Campus",
+      imageSrc: web3campus,
+      liveLink: "https://web3-campus.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/Web3Campus",
+      description: "Hub of web3 and Education platform",
+    },
+    {
+      id: 5,
+      title: "NFTClub Dao",
+      imageSrc: nftclub,
+      liveLink: "https://nftclubdao.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/nftclubdao",
+      description: "Landing page for a NFT Dao Project",
+    },
+    {
+      id: 6,
+      title: "Evasha",
+      imageSrc: evasha,
+      liveLink: "https://ecommerce-web-landing-page.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/Ecommerce-Web-Landing-page",
+      description: "Landing page for Girls Clothes online shop",
+    },
+    {
+      id: 7,
+      title: "HooBank",
+      imageSrc: hoobank,
+      liveLink: "https://bank-modern-app-eta-seven.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/bank_modern_app",
+      description: "Landing page for a Modern Bank",
+    },
+    {
+      id: 8,
+      title: "AI_summarizer",
+      imageSrc: aisum,
+      liveLink: "https://ai-summarizer-saas-1.vercel.app/",
+      githubLink:"https://github.com/Jayjeet1013/ai_summarizer_saas_1",
+      description: "Summarize Articles with OpenAI GPT-4",
     },
   ];
 
