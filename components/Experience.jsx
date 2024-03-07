@@ -10,6 +10,9 @@ import react from "../public/assets/experience/react.png";
 import tailwind from "../public/assets/experience/tailwind.png";
 import next from "../public/assets/experience/next.png";
 import solidity from "../public/assets/experience/Solidity.png";
+import material from "../public/assets/experience/material.png";
+import chakra from "../public/assets/experience/chakra.jpeg";
+
 
 const Experience = () => {
   const experiences = [
@@ -59,17 +62,27 @@ const Experience = () => {
       title: "Tailwind",
       src: tailwind,
     },
+    {
+      id: 9,
+      title: "Material UI",
+      src: material,
+    },
+    {
+      id: 9,
+      title: "Chakra UI",
+      src: chakra,
+    },
   ];
 
   return (
     <div id="experience" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 md:px-8 py-16 text-start md:text-left  ">
-        <h2 className="text-3xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
-          experience
+      <div className="max-w-screen-xl mx-auto px-8 md:px-8  py-16 text-start md:text-left  ">
+        <h2 className="text-3xl md:text-7xl mb-4 md:mb-12 tracking-wider uppercase text-blue-500 font-bold">
+          Skills
         </h2>
      
-         <h2 className="py-4">Know These Techs</h2>
-        <div className="grid lg:grid-cols-6 gap-4">
+         {/* <h2 className="py-4">Know These Techs</h2> */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mt-3">
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}

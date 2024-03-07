@@ -32,13 +32,13 @@ const Contact = () => {
             </p>
 
             <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
-              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/'>
+              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/' target="_blank" >
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
                 <FaLinkedin size={25} />
              
               </div>
               </Link>
-              <Link href='https://twitter.com/Jayjeet_100'>
+              <Link href='https://twitter.com/Jayjeet_100' target="_blank">
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaTwitter size={25} />
               </div>
@@ -46,7 +46,7 @@ const Contact = () => {
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaInstagram size={25} />
               </div>
-              <Link href='https://github.com/Jayjeet1013'>
+              <Link href='https://github.com/Jayjeet1013' target="_blank">
               <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
                 <FaGithub size={25} />
               </div>

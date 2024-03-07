@@ -7,20 +7,19 @@ import {
   FaGithub,
   FaTwitter,
   FaLinkedin,
-
+  FaInstagram,
 } from "react-icons/fa";
 
-
-
 const Navbar = () => {
+  const [navigation, setNavigation] = useState(false);
+  const [pageScroll, setPageScroll] = useState(false);
 
-const [navigation,setNavigation]=useState(false);
-const [pageScroll,setPageScroll]=useState(false)
-
-useEffect(()=>{
-const sub= window.addEventListener('scroll',()=>setPageScroll(window.scrollY >= 90))
-return sub;
-},[])
+  useEffect(() => {
+    const sub = window.addEventListener("scroll", () =>
+      setPageScroll(window.scrollY >= 90)
+    );
+    return sub;
+  }, []);
 
   const links = [
     {
@@ -45,10 +44,12 @@ return sub;
     },
   ];
 
-
-
   return (
-    <div className={`w-full h-20 z-10 fixed bg-white text-black duration-300 ease-in ${pageScroll && 'bg-black text-[#fff]'}`}>
+    <div
+      className={`w-full h-20 z-10 fixed bg-white text-black duration-300 ease-in ${
+        pageScroll && "bg-black text-[#fff]"
+      }`}
+    >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4 ">
         <Link href="/#home">
           <h1 className="text-3xl lg:text-4xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer">
@@ -66,67 +67,88 @@ return sub;
             ))}
           </ul>
 
-          {
-            !navigation && (
-   <div className="md:hidden cursor-pointer "  onClick={() => setNavigation(true)}>
-            <FaBars size={30} />
-          </div>
-            )
-          }
-
-       
+          {!navigation && (
+            <div
+              className="md:hidden cursor-pointer "
+              onClick={() => setNavigation(true)}
+            >
+              <FaBars size={30} />
+            </div>
+          )}
         </div>
       </div>
-      <div className={navigation ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur" : ""}>
-      <div className={ navigation ? " fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500" :"fixed top-0 left-[-100%] p-10 h-full ease-in duration-500 "}>
-             
-
-            <div>
-
-                <div className="flex w-full items-center  justify-between ">
-                 <Link href="/#home">
-                  <h2  onClick={() => setNavigation(false)} className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer ">
-                    Jay
-                  </h2>
-                 </Link>
-                 <div  onClick={() => setNavigation(false)} className="p-3 cursor-pointer">
-                    <FaTimes size={30}/>
-                 </div>
-                </div>
+      <div
+        className={
+          navigation
+            ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur"
+            : ""
+        }
+      >
+        <div
+          className={
+            navigation
+              ? " fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500"
+              : "fixed top-0 left-[-100%] p-10 h-full ease-in duration-500 "
+          }
+        >
+          <div>
+            <div className="flex w-full items-center  justify-between ">
+              <Link href="/#home">
+                <h2
+                  onClick={() => setNavigation(false)}
+                  className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer "
+                >
+                  Jay
+                </h2>
+              </Link>
+              <div
+                onClick={() => setNavigation(false)}
+                className="p-3 cursor-pointer"
+              >
+                <FaTimes size={30} />
+              </div>
             </div>
- 
-            <div className="mt-24 flex flex-col h-fit gap-20">
+          </div>
+
+          <div className="mt-24 flex flex-col h-fit gap-20">
             <ul className="uppercase">
-            {links.map (({id,link})=>(
-                 <Link key={id} href={`/#${link}`}>
-            <li onClick={() => setNavigation(false)} className="py-4 text-2xl tracking-wider cursor-pointer">{link}</li>
-           </Link>
-            ))}
-       
+              {links.map(({ id, link }) => (
+                <Link key={id} href={`/#${link}`}>
+                  <li
+                    onClick={() => setNavigation(false)}
+                    className="py-4 text-2xl tracking-wider cursor-pointer"
+                  >
+                    {link}
+                  </li>
+                </Link>
+              ))}
             </ul>
-             <div>
-                <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
-
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
-                    <FaLinkedin size={25}/>
-                </div>
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
-                    <FaTwitter size={25}/>
-                </div>
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
-                    <FaFacebook size={25}/>
-                </div>
-                <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer ">
-                    <FaGithub size={25}/>
-                </div>
-
-                </div>
-             </div>
+            <div>
+              <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
+              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/' target="_blank" >
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
+                <FaLinkedin size={25} />
+             
+              </div>
+              </Link>
+              <Link href='https://twitter.com/Jayjeet_100' target="_blank">
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                <FaTwitter size={25} />
+              </div>
+              </Link>
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                <FaInstagram size={25} />
+              </div>
+              <Link href='https://github.com/Jayjeet1013' target="_blank">
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                <FaGithub size={25} />
+              </div>
+              </Link>
+              </div>
             </div>
- 
+          </div>
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 };
