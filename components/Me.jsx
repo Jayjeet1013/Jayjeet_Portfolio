@@ -10,12 +10,12 @@ const Me = () => {
         </h2>
         <div className="shadow-xl shadow-blue-300 my-8 px-8">
           <p className="py-4 max-w-2xl mx-auto">
-            Hey there! 👋 I'm Jayjeet Kumar, a passionate frontend developer
+            Hey there! 👋 I&apos;m Jayjeet Kumar, a passionate frontend developer
             with a knack for crafting seamless user experiences. 🌐✨
             <br />
             <br />
             💻 Currently honing my skills in the ever-evolving world of frontend
-            development, I've got an insatiable curiosity for cutting-edge
+            development, I&apos;ve got an insatiable curiosity for cutting-edge
             technologies. 🚀
             <br />
             <br />
@@ -30,8 +30,8 @@ const Me = () => {
             of blockchain technology. 🌐💡
             <br />
             <br />
-            🌈 Always up for a challenge, I'm on a mission to blend creativity
-            with the power of emerging technologies. Let's connect, collaborate,
+            🌈 Always up for a challenge, I&apos;m on a mission to blend creativity
+            with the power of emerging technologies. Let&apos;s connect, collaborate,
             and build the future together! 🚀👨‍💻
           </p>
         </div>
