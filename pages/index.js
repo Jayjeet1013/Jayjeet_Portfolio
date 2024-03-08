@@ -8,7 +8,34 @@ import Footer from "../components/Footer";
 
 
 export default function Home() {
+  useEffect(() => {
+    ReactGA.initialize("G-YTYV6NDSH1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
+<>
+<Head>
+        <title>Collably Network</title>
+        <meta name="description" content="A Collab network" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo.png" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+      </Head>
    <div>
 
     <HomePage />
@@ -18,5 +45,6 @@ export default function Home() {
     <Contact/>
     <Footer/>
    </div>
+   </>
   );
 }
