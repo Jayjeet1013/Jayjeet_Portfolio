@@ -10,7 +10,7 @@ import ReactGA from "react-ga";
 
 export default function Home() {
   useEffect(() => {
-    ReactGA.initialize("G-YTYV6NDSH1");
+    ReactGA.initialize("G-42CDFZZ1TL");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
