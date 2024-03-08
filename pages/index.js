@@ -4,8 +4,7 @@ import HomePage from "../components/HomePage";
 import Me from "../components/Me";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
-
-
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -13,8 +12,8 @@ export default function Home() {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
-<>
-<Head>
+    <>
+      <Head>
         <title>Collably Network</title>
         <meta name="description" content="A Collab network" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,15 +35,14 @@ export default function Home() {
           }}
         />
       </Head>
-   <div>
-
-    <HomePage />
-    <Portfolio />
-    <Experience/>
-    <Me/>
-    <Contact/>
-    <Footer/>
-   </div>
-   </>
+      <div>
+        <HomePage />
+        <Portfolio />
+        <Experience />
+        <Me />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
