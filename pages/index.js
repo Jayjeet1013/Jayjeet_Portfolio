@@ -9,7 +9,10 @@ import { useEffect } from "react";
 import ReactGA from "react-ga";
 
 export default function Home() {
-
+  useEffect(() => {
+    ReactGA.initialize("G-42CDFZZ1TL");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       <Head>
