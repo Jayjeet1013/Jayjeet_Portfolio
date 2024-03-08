@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Collably Network</title>
-        <meta name="description" content="A Collab network" />
+        <title>Jayjeet Portfolio</title>
+        <meta name="description" content="Portfolio of Jayjeet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
         <script
