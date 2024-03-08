@@ -5,6 +5,7 @@ import Me from "../components/Me";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
