@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export default function Home() {
   useEffect(() => {
