@@ -128,24 +128,9 @@ const Portfolio = () => {
       githubLink:"https://github.com/Jayjeet1013/ai_summarizer_saas_1",
       description: "Summarize Articles with OpenAI GPT-4",
     },
+   
     {
       id: 9,
-      title: "Github Repository search",
-      imageSrc: repo,
-      liveLink: "https://github-repo-search-seven.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/github-repo-search",
-      description: "Using for searching repo and username on github",
-    },
-    {
-      id: 10,
-      title: "Spotify CLone",
-      imageSrc: spotify,
-      liveLink: "https://spotifyjay.netlify.app/",
-      githubLink:"https://github.com/Jayjeet1013/Spotify-clone",
-      description: "Clone of Spotify",
-    },
-    {
-      id: 11,
       title: "Decentralized Notice Board",
       imageSrc: notice,
       liveLink: "https://dnoticeboard.netlify.app/",
@@ -153,7 +138,7 @@ const Portfolio = () => {
       description: "Landing Page for Decentralized Notice Board",
     },
     {
-      id: 12,
+      id: 10,
       title: "EsaLink",
       imageSrc: esalink,
       liveLink: "https://website-design-pi.vercel.app/",
