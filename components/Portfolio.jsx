@@ -154,7 +154,7 @@ const Portfolio = () => {
           projects
         </h2>
         <p className="py-6  text-[24px] font-semibold text-blue-500">
-          These are My Projects in Web2 and Web3.
+         Projects
         </p>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(
@@ -200,7 +200,7 @@ const Portfolio = () => {
           )}
         </div>
         <div className="mt-12 mb-6 text-[24px] font-semibold text-blue-500">
-          These are My Freelance Projects
+          Freelance Projects
         </div>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 ">
           {freelance.map(({ id, title, imageSrc, href, description }) => (
