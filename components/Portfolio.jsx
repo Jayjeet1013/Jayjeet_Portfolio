@@ -5,7 +5,7 @@ import { MdExpandMore } from "react-icons/md";
 import asva from "../public/asva.png";
 import genai from "../public/genai.png";
 // import nftclubdao from '../public/nftclubdao.png';
-import hashmind from "../public/hashmind.png";
+
 import chaidapp from "../public/chaidapp.png";
 import dep from "../public/dep.png";
 import bit from "../public/bit.png";
@@ -21,6 +21,10 @@ import repo from "../public/repo.png";
 import notice from "../public/notice.png";
 import spotify from "../public/spotify.png";
 import esalink from "../public/esalink.png";
+import superportal from "../public/superportal.png";
+import hashmind from "../public/hashmind.png";
+import tangido from "../public/tangido.png";
+
 
 
 const Portfolio = () => {
@@ -59,6 +63,27 @@ const Portfolio = () => {
       imageSrc: ums,
       href: "https://umskajri.vercel.app/",
       description: "IT is a School website",
+    },
+    {
+      id: 6,
+      title: "SuperPortal",
+      imageSrc: superportal,
+      href: "https://superportal.ai/",
+      description: "Shaping The Future Of Web3 And AI",
+    },
+    {
+      id: 7,
+      title: "Hashmind",
+      imageSrc: hashmind,
+      href: "https://www.hashmind.org/",
+      description: "Convergence of Web3 & AI Venture Studio",
+    },
+    {
+      id: 8,
+      title: "Tangido",
+      imageSrc: tangido,
+      href: "https://tangido.com/",
+      description: "Buy and Sell Institutional Grade Real-World Assets",
     },
   ];
   const portfolios = [
