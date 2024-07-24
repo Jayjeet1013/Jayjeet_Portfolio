@@ -12,7 +12,7 @@ import bit from "../public/bit.png";
 import hash from "../public/hashstone.png";
 import evasha from "../public/evasha.png";
 import nftclub from "../public/nftclub.png";
-import aisum from "../public/aisum.png";
+import auraui from "../public/auraui.png";
 import cloth from "../public/cloth.png";
 import hoobank from "../public/hoobank.png";
 import ums from "../public/ums.png";
@@ -24,8 +24,6 @@ import esalink from "../public/esalink.png";
 import superportal from "../public/superportal.png";
 import hashmind from "../public/hashmind.png";
 import tangido from "../public/tangido.png";
-
-
 
 const Portfolio = () => {
   const freelance = [
@@ -89,6 +87,24 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      title: "AuraUI",
+      imageSrc: auraui,
+      liveLink: "https://www.auraui.com/",
+      githubLink:
+        "https://github.com/Jayjeet1013/ai_summarizer_saas_1https://github.com/Shubham0850/auraui",
+      description:
+        "Stop Coding from Scratch - A UI Library for Every Skill Level.",
+    },
+    {
+      id: 2,
+      title: "Web3Campus",
+      imageSrc: web3campus,
+      liveLink: "https://web3-campus.vercel.app/",
+      githubLink: "https://github.com/Jayjeet1013/Web3Campus",
+      description: "Hub of web3 and Education platform",
+    },
+    {
+      id: 3,
       title: "Gen AI",
       imageSrc: genai,
       liveLink: "https://genai-xzgd.vercel.app/",
@@ -98,35 +114,20 @@ const Portfolio = () => {
     },
 
     {
-      id: 2,
-      title: "Chai Dapp",
-      imageSrc: chaidapp,
-      liveLink: "https://chaipay.netlify.app/",
-      githubLink:"https://github.com/Jayjeet1013/CHai",
-      description: "Use to transfer message and ether",
-    },
-    {
-      id: 3,
+      id: 4,
       title: "Cloth Shop",
       imageSrc: cloth,
       liveLink: "https://ecommerce-lilac-three.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/Ecommerce",
       description: "Landing page for online CLoth shops",
     },
-    {
-      id: 4,
-      title: "Web3Campus",
-      imageSrc: web3campus,
-      liveLink: "https://web3-campus.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/Web3Campus",
-      description: "Hub of web3 and Education platform",
-    },
+
     {
       id: 5,
       title: "NFTClub Dao",
       imageSrc: nftclub,
       liveLink: "https://nftclubdao.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/nftclubdao",
+      githubLink: "https://github.com/Jayjeet1013/nftclubdao",
       description: "Landing page for a NFT Dao Project",
     },
     {
@@ -134,7 +135,7 @@ const Portfolio = () => {
       title: "Evasha",
       imageSrc: evasha,
       liveLink: "https://ecommerce-web-landing-page.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/Ecommerce-Web-Landing-page",
+      githubLink: "https://github.com/Jayjeet1013/Ecommerce-Web-Landing-page",
       description: "Landing page for Girls Clothes online shop",
     },
     {
@@ -142,33 +143,34 @@ const Portfolio = () => {
       title: "HooBank",
       imageSrc: hoobank,
       liveLink: "https://bank-modern-app-eta-seven.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/bank_modern_app",
+      githubLink: "https://github.com/Jayjeet1013/bank_modern_app",
       description: "Landing page for a Modern Bank",
     },
+
     {
       id: 8,
-      title: "AI_summarizer",
-      imageSrc: aisum,
-      liveLink: "https://ai-summarizer-saas-1.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/ai_summarizer_saas_1",
-      description: "Summarize Articles with OpenAI GPT-4",
+      title: "Chai Dapp",
+      imageSrc: chaidapp,
+      liveLink: "https://chaipay.netlify.app/",
+      githubLink: "https://github.com/Jayjeet1013/CHai",
+      description: "Use to transfer message and ether",
     },
-   
+    // {
+    //   id: ,
+    //   title: "AI_summarizer",
+    //   imageSrc: aisum,
+    //   liveLink: "https://ai-summarizer-saas-1.vercel.app/",
+    //   githubLink:"https://github.com/Jayjeet1013/ai_summarizer_saas_1",
+    //   description: "Summarize Articles with OpenAI GPT-4",
+    // },
+
     {
       id: 9,
       title: "Decentralized Notice Board",
       imageSrc: notice,
       liveLink: "https://dnoticeboard.netlify.app/",
-      githubLink:"https://github.com/Jayjeet1013/Decentralized-Notice-Board",
+      githubLink: "https://github.com/Jayjeet1013/Decentralized-Notice-Board",
       description: "Landing Page for Decentralized Notice Board",
-    },
-    {
-      id: 10,
-      title: "EsaLink",
-      imageSrc: esalink,
-      liveLink: "https://website-design-pi.vercel.app/",
-      githubLink:"https://github.com/Jayjeet1013/website_design",
-      description: "Landing Page for a Esalink company",
     },
   ];
 
@@ -179,7 +181,7 @@ const Portfolio = () => {
           projects
         </h2>
         <p className="py-6  text-[24px] font-semibold text-blue-500">
-         Projects
+          Projects
         </p>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(
