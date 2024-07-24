@@ -180,10 +180,10 @@ const Portfolio = () => {
         <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
           projects
         </h2>
-        <p className="py-6  text-[24px] font-semibold text-blue-500">
+        {/* <p className="py-6  text-[24px] font-semibold text-blue-500">
           Projects
-        </p>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        </p> */}
+        <div className="max-w-5xl mt-6 mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(
             ({ id, title, imageSrc, liveLink, githubLink, description }) => (
               <div key={id}>
