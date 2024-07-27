@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jayjeet Portfolio</title>
+        <title>Jayjeet Kumar</title>
         <meta
           name="description"
           content="Welcome to the professional portfolio of Jayjeet Kumar, a Frontend developer specializing in Next.js, React, and Tailwind CSS. Discover projects, skills, and experience."
