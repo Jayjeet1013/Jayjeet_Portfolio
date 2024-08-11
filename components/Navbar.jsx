@@ -32,7 +32,7 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "skills",
+      link: "experience",
     },
     {
       id: 4,
@@ -46,8 +46,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`w-full h-20 z-10  bg-white text-black duration-300 ease-in ${
-        pageScroll && "bg-blur text-[#fff]"
+      className={`w-full h-20 z-10 fixed bg-black text-white duration-300 ease-in ${
+        pageScroll && "bg-blur text-[#8cf8c2]"
       }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4 ">

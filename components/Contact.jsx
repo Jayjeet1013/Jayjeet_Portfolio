@@ -1,112 +1,113 @@
 import React from "react";
-import contactus from "../public/assets/contactus.jpg";
 import Image from "next/image";
+import contactus from "../public/assets/contactus.jpg";
 import Link from "next/link";
-import {
-  FaBars,
-  FaTimes,
-  FaInstagram,
-  FaGithub,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaInstagram, FaGithub, FaTwitter, FaLinkedin, FaGitSquare, FaGithubSquare } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left  ">
-        <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
+    <div id="contact" className="w-full bg-black text-white py-16">
+      <div className="max-w-screen-xl mx-auto px-8 md:px-16">
+        <h2 className="text-5xl md:text-7xl  font-bold text-green-500 tracking-wider uppercase text-center mb-12">
           Contact
         </h2>
 
-        <div className="flex flex-col md:flex-row gap-8 shadow-xl shadow-blue-300 bg-white mt-4">
-          <div className="w-full md:w-1/2 h-full rounded-xl p-4">
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="w-full md:w-1/2 rounded-xl bg-green-900 p-6 shadow-lg ">
             <Image
               src={contactus}
-              alt="man with laptop"
-              className="rounded-xl"
+              alt="Contact Us"
+              className="rounded-xl mb-4"
+              layout="responsive"
+              width={500}
+              height={300}
             />
-            <p className="pt-2 pb-8">
-             For any queries Contact here
-             
+            <p className="text-lg  md:text-xl">
+              For any queries, contact us here:
             </p>
 
-            <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
-              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/' target="_blank" >
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
-                <FaLinkedin size={25} />
-             
-              </div>
+            <div className="flex flex-wrap justify-center gap-6 mt-6">
+              <Link
+                href="https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/"
+                target="_blank"
+              >
+                <div className="flex items-center justify-center bg-blue-600 rounded-full shadow-md p-3 transition-transform transform hover:scale-110 duration-300 ease-in-out cursor-pointer">
+                  <FaLinkedin size={30} />
+                </div>
               </Link>
-              <Link href='https://twitter.com/Jayjeet_100' target="_blank">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaTwitter size={25} />
-              </div>
+              <Link href="https://twitter.com/Jayjeet_100" target="_blank">
+                <div className="flex items-center justify-center bg-blue-400 rounded-full shadow-md p-3 transition-transform transform hover:scale-110 duration-300 ease-in-out cursor-pointer">
+                  <FaTwitter size={30} />
+                </div>
               </Link>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaInstagram size={25} />
-              </div>
-              <Link href='https://github.com/Jayjeet1013' target="_blank">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaGithub size={25} />
-              </div>
+
+              <Link href="https://github.com/Jayjeet1013" target="_blank">
+                <div className="flex items-center justify-center bg-gray-800 rounded-full shadow-md p-3 transition-transform transform hover:scale-110 duration-300 ease-in-out cursor-pointer">
+                  <FaGithub size={30} />
+                </div>
               </Link>
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 h-full rounded-xl p-4">
-  <div className="p-4 text-left">
-    <form action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744" method="POST">
-      <div className=" gap-4  w-full  py-2">
-        <div className="flex flex-col">
-          <label className="capitalize text-sm py-2 text-slate-600  font-light">
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
-          />
-        </div>
-        <div className="flex flex-col">
-          <label className="capitalize text-sm py-2 text-slate-600  font-light">
-            Phone
-          </label>
-          <input
-            type="text"
-            name="phone"
-            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
-          />
-        </div>
-        <div className="flex flex-col col-span-2">
-          <label className="capitalize text-sm py-2 text-slate-600  font-light">
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
-          />
-        </div>
-        <div className="flex flex-col col-span-2">
-          <label className="capitalize text-sm py-2 text-slate-600  font-light">
-            Message
-          </label>
-          <textarea
-            name="message"
-            rows="6"
-            className="border-2 rounded-lg  p-3 flex focus:outline-none border-blue-200"
-          ></textarea>
-        </div>
-      </div>
+          <div className="w-full md:w-1/2 bg-green-900 rounded-xl p-6 shadow-lg ">
+            <h3 className="text-xl font-bold  mb-4">Send Us a Message</h3>
+            <form
+              action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744"
+              method="POST"
+            >
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-md font-normal text-slate-200">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    className="w-full border-2 text-black border-blue-200 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-md font-normal text-slate-200">
+                    Phone
+                  </label>
+                  <input
+                    type="text"
+                    name="phone"
+                    className="w-full border-2 text-black border-blue-200 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-md font-normal text-slate-200">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    className="w-full border-2 text-black border-blue-200 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-md font-normal text-slate-200">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    className="w-full border-2 text-black border-blue-200 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                  ></textarea>
+                </div>
+              </div>
 
-      <div className="flex items-center justify-center">
-        <button className="group my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 duration-200">Send message</button>
-      </div>
-    </form>
-  </div>
-</div>
-
+              <div className="flex justify-center mt-6">
+                <button
+                  type="submit"
+                  className="group bg-blue-200 text-green-900 px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer transition-transform transform hover:scale-105 duration-300 ease-in-out"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
