@@ -183,7 +183,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id="projects" className="bg-black w-full py-16">
+    <div id="projects" className="bg-black w-full py-32">
       <div className="max-w-screen-xl mx-auto px-8 text-center md:text-left">
         {/* Personal Projects */}
         <h3 className="text-3xl md:text-5xl tracking-wide uppercase text-gray-200 font-semibold">
