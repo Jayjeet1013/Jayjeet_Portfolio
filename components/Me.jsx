@@ -9,7 +9,7 @@ const Me = () => {
           me
         </h2>
         <div className="shadow-xl shadow-blue-300 my-8 px-8">
-          <p className="py-4 max-w-2xl mx-auto">
+          <p className="py-10 max-w-2xl mx-auto">
             Hey there! 👋 I&apos;m Jayjeet Kumar, a passionate frontend developer
             with a knack for crafting seamless user experiences. 🌐✨
             <br />

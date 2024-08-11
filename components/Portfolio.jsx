@@ -24,6 +24,8 @@ import esalink from "../public/esalink.png";
 import superportal from "../public/superportal.png";
 import hashmind from "../public/hashmind.png";
 import tangido from "../public/tangido.png";
+import fitnessai from "../public/fitnessai.png";
+import pantry from "../public/pantry.png";
 
 const Portfolio = () => {
   const freelance = [
@@ -32,7 +34,7 @@ const Portfolio = () => {
       title: "Asva Ventures",
       imageSrc: asva,
       href: "https://asva-venture.vercel.app/",
-      description: "A BLog Website for Asva Ventures",
+      description: "A Blog Website for Asva Ventures",
     },
     {
       id: 2,
@@ -60,7 +62,7 @@ const Portfolio = () => {
       title: "UMSKajri",
       imageSrc: ums,
       href: "https://umskajri.vercel.app/",
-      description: "IT is a School website",
+      description: "It is a School website",
     },
     {
       id: 6,
@@ -84,14 +86,14 @@ const Portfolio = () => {
       description: "Buy and Sell Institutional Grade Real-World Assets",
     },
   ];
+
   const portfolios = [
     {
       id: 1,
       title: "AuraUI",
       imageSrc: auraui,
       liveLink: "https://www.auraui.com/",
-      githubLink:
-        "https://github.com/Jayjeet1013/ai_summarizer_saas_1https://github.com/Shubham0850/auraui",
+      githubLink: "https://github.com/Shubham0850/auraui",
       description:
         "Stop Coding from Scratch - A UI Library for Every Skill Level.",
     },
@@ -101,149 +103,183 @@ const Portfolio = () => {
       imageSrc: web3campus,
       liveLink: "https://web3-campus.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/Web3Campus",
-      description: "Hub of web3 and Education platform",
+      description:
+        "Web3 Campus is an educational platform dedicated to teaching Web3.",
     },
     {
       id: 3,
+      title: "FitnessAI",
+      imageSrc: fitnessai,
+      liveLink: "https://fitness-ai-theta.vercel.app/",
+      githubLink: "https://github.com/Jayjeet1013/FitnessAI",
+      description:
+        "Fitness AI is an intelligent health application that helps users achieve their wellness goals.",
+    },
+    {
+      id: 4,
+      title: "Pantry Tracker",
+      imageSrc: pantry,
+      liveLink: "https://pantry-trackerr.vercel.app/",
+      githubLink: "https://github.com/Jayjeet1013/inventory_management",
+      description:
+        "Pantry Tracker is a web application designed to efficiently manage and track your pantry inventory.",
+    },
+    {
+      id: 5,
       title: "Gen AI",
       imageSrc: genai,
       liveLink: "https://genai-xzgd.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/genai",
-      description:
-        "Gen Ai :- It is a simple langding page for a AI startup Project",
+      description: "Gen Ai: A simple landing page for an AI startup project.",
     },
 
     {
-      id: 4,
+      id: 6,
       title: "Cloth Shop",
       imageSrc: cloth,
       liveLink: "https://ecommerce-lilac-three.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/Ecommerce",
-      description: "Landing page for online CLoth shops",
+      description: "Landing page for an online cloth shop.",
     },
 
     {
-      id: 5,
+      id: 7,
       title: "NFTClub Dao",
       imageSrc: nftclub,
       liveLink: "https://nftclubdao.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/nftclubdao",
-      description: "Landing page for a NFT Dao Project",
+      description: "Landing page for an NFT Dao project.",
     },
     {
-      id: 6,
+      id: 8,
       title: "Evasha",
       imageSrc: evasha,
       liveLink: "https://ecommerce-web-landing-page.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/Ecommerce-Web-Landing-page",
-      description: "Landing page for Girls Clothes online shop",
+      description: "Landing page for a girls' clothes online shop.",
     },
     {
-      id: 7,
+      id: 9,
       title: "HooBank",
       imageSrc: hoobank,
       liveLink: "https://bank-modern-app-eta-seven.vercel.app/",
       githubLink: "https://github.com/Jayjeet1013/bank_modern_app",
-      description: "Landing page for a Modern Bank",
+      description: "Landing page for a modern bank.",
     },
 
     {
-      id: 8,
+      id: 10,
       title: "Chai Dapp",
       imageSrc: chaidapp,
       liveLink: "https://chaipay.netlify.app/",
       githubLink: "https://github.com/Jayjeet1013/CHai",
-      description: "Use to transfer message and ether",
+      description: "Used to transfer messages and ether.",
     },
-    // {
-    //   id: ,
-    //   title: "AI_summarizer",
-    //   imageSrc: aisum,
-    //   liveLink: "https://ai-summarizer-saas-1.vercel.app/",
-    //   githubLink:"https://github.com/Jayjeet1013/ai_summarizer_saas_1",
-    //   description: "Summarize Articles with OpenAI GPT-4",
-    // },
 
     {
-      id: 9,
+      id: 11,
       title: "Decentralized Notice Board",
       imageSrc: notice,
       liveLink: "https://dnoticeboard.netlify.app/",
       githubLink: "https://github.com/Jayjeet1013/Decentralized-Notice-Board",
-      description: "Landing Page for Decentralized Notice Board",
+      description: "Landing page for a decentralized notice board.",
     },
   ];
 
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left ">
-        <h2 className="text-5xl md:text-7xl  tracking-wider uppercase text-blue-500 font-bold">
-          projects
-        </h2>
-        {/* <p className="py-6  text-[24px] font-semibold text-blue-500">
+      <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+        {/* <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
           Projects
-        </p> */}
-        <div className="max-w-5xl mt-6 mx-auto grid md:grid-cols-2 gap-8">
+        </h2> */}
+
+        {/* Personal Projects */}
+        <h3 className="text-3xl md:text-5xl tracking-wide uppercase text-gray-700 font-semibold mt-16">
+          Personal Projects
+        </h3>
+        <div className="mt-6 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolios.map(
             ({ id, title, imageSrc, liveLink, githubLink, description }) => (
-              <div key={id}>
+              <div
+                key={id}
+                className="flex flex-col justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl duration-300 transform hover:scale-105"
+              >
                 <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                  <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
+                  <div className="overflow-hidden rounded-lg">
                     <Image
                       src={imageSrc}
                       alt={title}
-                      className="rounded-md duration-200 h-80 hover:scale-110"
+                      className="rounded-lg duration-200 hover:scale-110"
+                      width={400}
+                      height={250}
+                      layout="responsive"
                     />
-                    <h2 className="text-center text-base capitalize my-3 font-light duration-200  ">
-                      {title}
-                    </h2>
-                    <p className="text-center text-gray-500 py-2">
-                      {description}
-                    </p>
-                    <div className=" flex gap-4 items-center justify-center my-2">
-                      <a
-                        href={liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <p className="bg-green-600 py-2 px-3 rounded-lg hover:scale-110 duration-200 font-semibold text-white ">
-                          Live Link
-                        </p>
-                      </a>
-                      <a
-                        href={githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <p className="bg-red-600 px-3 py-2 rounded-lg hover:scale-110 duration-200 font-semibold text-white">
-                          GitHub Repository
-                        </p>
-                      </a>
-                    </div>
                   </div>
                 </a>
+                <div className="mt-4 text-center">
+                  <h3 className="text-xl font-semibold">{title}</h3>
+                  <p className="mt-2 text-gray-600">{description}</p>
+                </div>
+                <div className="flex justify-center mt-4 space-x-4">
+                  <a
+                    href={liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+                  >
+                    Visit
+                  </a>
+                  <a
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-900"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
             )
           )}
         </div>
-        <div className="mt-12 mb-6 text-[24px] font-semibold text-blue-500">
+
+        {/* Freelance Projects */}
+        <h3 className="text-3xl  md:text-5xl tracking-wide uppercase text-gray-700 font-semibold mt-20">
           Freelance Projects
-        </div>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 ">
+        </h3>
+        <div className="mt-6 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {freelance.map(({ id, title, imageSrc, href, description }) => (
-            <a key={id} href={href} target="_blank" rel="noopener noreferrer">
-              <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
-                <Image
-                  src={imageSrc}
-                  alt={title}
-                  className="rounded-md duration-200 h-80 hover:scale-110"
-                />
-                <h2 className="text-center text-base capitalize my-3 font-light duration-200  ">
-                  {title}
-                </h2>
-                <p className="text-center text-gray-500 py-2">{description}</p>
+            <div
+              key={id}
+              className="flex flex-col justify-between bg-white p-4 rounded-lg shadow-md hover:shadow-xl duration-300 transform hover:scale-105"
+            >
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                <div className="overflow-hidden rounded-lg">
+                  <Image
+                    src={imageSrc}
+                    alt={title}
+                    className="rounded-lg duration-200 hover:scale-110"
+                    width={400}
+                    height={250}
+                    layout="responsive"
+                  />
+                </div>
+              </a>
+              <div className="mt-4 text-center">
+                <h3 className="text-xl font-semibold">{title}</h3>
+                <p className="mt-2 text-gray-600">{description}</p>
               </div>
-            </a>
+              <div className="flex justify-center mt-4 space-x-4">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
+                >
+                  Visit
+                </a>
+              </div>
+            </div>
           ))}
         </div>
       </div>
