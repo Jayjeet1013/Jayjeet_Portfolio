@@ -69,6 +69,28 @@ const Experience = () => {
             </ul>
           </div>
 
+          {/* Headstarter Experience */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-semibold mb-2">Headstarter</h3>
+            <p className="text-gray-400 mb-2">Software Engineer Fellow</p>
+            <p className="text-gray-300 mb-4">July 2024 - September 2024</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                Built and deployed 5 projects in 5 weeks using Next.js,
+                Firebase, Clerk, and Vercel, following agile methodologies.
+              </li>
+              <li>
+                Collaborated with 3 fellows to develop a SaaS product for
+                dynamic flashcard generation using the Gemini API, with paywall
+                integration via Stripe API and authentication through Clerk.
+              </li>
+              <li>
+                Developed an interactive fitness AI customer support agent using
+                Next.js and the Gemini API in a team of 3.
+              </li>
+            </ul>
+          </div>
+
           {/* Freelance Experience */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">
