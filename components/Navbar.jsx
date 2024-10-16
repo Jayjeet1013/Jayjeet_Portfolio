@@ -34,10 +34,10 @@ const Navbar = () => {
       id: 3,
       link: "experience",
     },
-    {
-      id: 4,
-      link: "me",
-    },
+    // {
+    //   id: 4,
+    //   link: "me",
+    // },
     {
       id: 5,
       link: "contact",
