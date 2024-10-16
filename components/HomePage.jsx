@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import heroImage from "../public/assets/file.png";
+import heroImage from "../public/assets/avatar.webp";
 import { MdExpandMore } from "react-icons/md";
 import Link from "next/link";
 
@@ -12,13 +12,13 @@ const HomePage = () => {
     >
       <div className="max-w-screen-xl mx-auto p-4 md:p-8 flex flex-col items-center text-white">
         <div className="relative w-56 h-[220px] md:w-96 md:h-[380px] mx-auto overflow-hidden rounded-full">
-          <div className="absolute inset-0 bg-black opacity-40 rounded-full"></div>
+          <div className="absolute inset-0 opacity-40 rounded-full"></div>
           <Image
             src={heroImage}
             alt="Hero Image"
-          height={800}
-          width={800}
-            className="transform scale-100 transition-transform duration-500 ease-in-out group-hover:scale-105 rounded-full"
+            height={800}
+            width={800}
+            className="transform border scale-100  transition-transform duration-500 ease-in-out group-hover:scale-105 rounded-full"
           />
           <div className="absolute inset-0 border-4 border-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
