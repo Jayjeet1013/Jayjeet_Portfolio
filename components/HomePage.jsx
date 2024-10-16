@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div
       id="home"
-      className="w-full min-h-screen bg-black text-center pt-0 md:pt-20 flex items-center justify-center"
+      className="w-full  lg:min-h-screen bg-black text-center pt-20 flex items-center justify-center"
     >
       <div className="max-w-screen-xl mx-auto p-4 md:p-8 flex flex-col items-center text-white">
         <div className="relative w-56 h-[220px] md:w-96 md:h-[380px] mx-auto overflow-hidden rounded-full">
