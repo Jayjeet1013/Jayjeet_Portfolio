@@ -16,18 +16,44 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jayjeet Kumar</title>
+        <title>Jayjeet Kumar | Frontend Developer & Web3 Engineer</title>
         <meta
           name="description"
-          content="Welcome to the professional portfolio of Jayjeet Kumar, a Frontend developer specializing in Next.js, React, and Tailwind CSS. Discover projects, skills, and experience."
+          content="Explore the portfolio of Jayjeet Kumar, a skilled Frontend Developer proficient in Next.js, React, Tailwind CSS, and Web3 technologies. Check out his projects, experience, and contact details."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
-          content="Jayjeet Kumar, Jayjeet Portfolio, Frontend Developer, Next.js, React, Tailwind CSS, Web Developer, AI Engineer,Web3 Developer,Software Engineer"
+          content="Jayjeet Kumar, Frontend Developer, React, Next.js, Tailwind CSS, Web Developer, Web3 Developer, Software Engineer, Jayjeet Portfolio"
         />
         <meta name="author" content="Jayjeet Kumar" />
         <link rel="icon" href="/assets/avatar.webp" />
+
+        {/* Open Graph Meta Tags for Social Media */}
+        <meta
+          property="og:title"
+          content="Jayjeet Kumar | Frontend Developer & Web3 Engineer"
+        />
+        <meta
+          property="og:description"
+          content="Discover the work and projects of Jayjeet Kumar, a talented frontend developer with expertise in modern web technologies."
+        />
+        <meta property="og:image" content="/assets/avatar.webp" />
+        <meta property="og:url" content="https://your-portfolio-url.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Jayjeet Kumar | Frontend Developer & Web3 Engineer"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore the portfolio of Jayjeet Kumar, showcasing projects and skills in modern web technologies like React, Next.js, and Web3."
+        />
+        <meta name="twitter:image" content="/assets/avatar.webp" />
+
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
