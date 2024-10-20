@@ -38,10 +38,12 @@ const Experience = () => {
         </h2>
         <div className="space-y-12 mb-12">
           {/* AuraUI Experience */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">AuraUI</h3>
-            <p className="text-gray-400 mb-2">Frontend Web Developer</p>
-            <p className="text-gray-300 mb-4">May 2024 - Present</p>
+            <p className="text-gray-100 font-semibold mb-2">
+              Frontend Web Developer
+            </p>
+            <p className="text-gray-100 mb-4">May 2024 - Present</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Developed the entire website using Next.js, Nextra, and Tailwind
@@ -55,10 +57,12 @@ const Experience = () => {
           </div>
 
           {/* Kyte Experience */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">Kyte</h3>
-            <p className="text-gray-400 mb-2">Frontend Web Developer Intern</p>
-            <p className="text-gray-300 mb-4">Dec 2023 - Feb 2024</p>
+            <p className="text-gray-100 font-semibold mb-2">
+              Frontend Web Developer Intern
+            </p>
+            <p className="text-gray-100 mb-4">Dec 2023 - Feb 2024</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Lead efforts in responsive design, ensuring optimal user
@@ -70,10 +74,12 @@ const Experience = () => {
           </div>
 
           {/* Headstarter Experience */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">Headstarter</h3>
-            <p className="text-gray-400 mb-2">Software Engineer Fellow</p>
-            <p className="text-gray-300 mb-4">July 2024 - September 2024</p>
+            <p className="text-gray-100 font-semibold mb-2">
+              Software Engineer Fellow
+            </p>
+            <p className="text-gray-100 mb-4">July 2024 - September 2024</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Built and deployed 5 projects in 5 weeks using Next.js,
@@ -92,12 +98,12 @@ const Experience = () => {
           </div>
 
           {/* Freelance Experience */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">
               Freelance Frontend Developer
             </h3>
-            <p className="text-gray-400 mb-2">Freelancer</p>
-            <p className="text-gray-300 mb-4">June 2023 - Present</p>
+            <p className="text-gray-100 font-semibold mb-2">Freelancer</p>
+            <p className="text-gray-100  mb-4">June 2023 - Present</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Developed and delivered various projects using Next.js, React,
@@ -117,14 +123,14 @@ const Experience = () => {
         </div>
 
         {/* Skills Section */}
-        <h2 className="text-3xl md:text-4xl mb-6 md:mb-12 tracking-wider uppercase text-blue-500 font-bold text-center">
+        <h2 className="text-3xl md:text-4xl mb-6 md:mb-12 tracking-wider uppercase text-white font-bold text-center">
           Skills
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
-              className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center p-4 bg-green-700 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 "
             >
               <Image
                 src={src}
@@ -133,7 +139,7 @@ const Experience = () => {
                 alt={title}
                 className="mb-2"
               />
-              <h3 className="text-lg font-light">{title}</h3>
+              <h3 className="text-lg  font-medium ">{title}</h3>
             </div>
           ))}
         </div>

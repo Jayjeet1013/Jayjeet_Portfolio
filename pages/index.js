@@ -27,7 +27,7 @@ export default function Home() {
           content="Jayjeet Kumar, Jayjeet Portfolio, Frontend Developer, Next.js, React, Tailwind CSS, Web Developer, AI Engineer,Web3 Developer,Software Engineer"
         />
         <meta name="author" content="Jayjeet Kumar" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/assets/avatar.webp" />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

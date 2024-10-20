@@ -194,7 +194,7 @@ const Portfolio = () => {
             ({ id, title, imageSrc, liveLink, githubLink, description }) => (
               <div
                 key={id}
-                className="flex flex-col justify-between bg-gray-800 p-4 rounded-lg shadow-lg "
+                className="flex flex-col justify-between bg-green-700 p-4 rounded-lg shadow-lg "
               >
                 <a href={liveLink} target="_blank" rel="noopener noreferrer">
                   <div className="overflow-hidden rounded-lg">
@@ -212,7 +212,7 @@ const Portfolio = () => {
                   <h3 className="text-xl font-semibold text-gray-100">
                     {title}
                   </h3>
-                  <p className="mt-2 text-gray-400">{description}</p>
+                  <p className="mt-2 text-gray-100">{description}</p>
                 </div>
                 <div className="flex justify-center mt-4 space-x-4">
                   <a
@@ -248,7 +248,7 @@ const Portfolio = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col justify-between bg-gray-800 p-4 rounded-lg shadow-lg "
+              className="flex flex-col justify-between bg-green-700 p-4 rounded-lg shadow-lg "
             >
               <div className="overflow-hidden rounded-lg">
                 <Image
@@ -262,7 +262,7 @@ const Portfolio = () => {
               </div>
               <div className="mt-4 text-center">
                 <h3 className="text-xl font-semibold text-gray-100">{title}</h3>
-                <p className="mt-2 text-gray-400">{description}</p>
+                <p className="mt-2 text-gray-100">{description}</p>
               </div>
             </a>
           ))}

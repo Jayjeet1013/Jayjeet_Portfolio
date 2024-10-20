@@ -47,12 +47,12 @@ const Navbar = () => {
   return (
     <div
       className={`w-full h-20 z-10 fixed bg-black text-white duration-300 ease-in ${
-        pageScroll && "bg-blur text-[#8cf8c2]"
+        pageScroll && "bg-blur text-[#8cf8c2] "
       }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4 ">
         <Link href="/#home">
-          <h1 className="text-3xl lg:text-4xl font-bold  underline underline-offset-2 tracking-wider cursor-pointer">
+          <h1 className="text-3xl hover:text-green-500 lg:text-4xl font-bold  underline underline-offset-2 tracking-wider cursor-pointer">
             JayKay
           </h1>
         </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
               <Link key={id} href={`/#${link}`}>
-                <li className="ml-10 text-md uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider ">
+                <li className="ml-10 text-md uppercase cursor-pointer duration-200 ease-out hover:scale-105 hover:text-green-500 tracking-wider ">
                   {link}
                 </li>
               </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
                   onClick={() => setNavigation(false)}
                   className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer "
                 >
-                  Jay
+                  JayKay
                 </h2>
               </Link>
               <div
