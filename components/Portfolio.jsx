@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { MdExpandMore } from "react-icons/md";
-
 import asva from "../public/asva.png";
 import genai from "../public/genai.png";
 import chaidapp from "../public/chaidapp.png";
@@ -24,6 +23,8 @@ import hashmind from "../public/hashmind.png";
 import tangido from "../public/tangido.png";
 import fitnessai from "../public/fitnessai.png";
 import pantry from "../public/pantry.png";
+import landjobber from "../public/landjobber.png";
+
 
 const Portfolio = () => {
   const freelance = [
@@ -180,6 +181,14 @@ const Portfolio = () => {
       githubLink: "https://github.com/Jayjeet1013/Decentralized-Notice-Board",
       description: "Landing page for a decentralized notice board.",
     },
+    {
+      id: 12,
+      title: "LandJobber",
+      imageSrc: landjobber,
+      liveLink: "https://landjobber.vercel.app/",
+      githubLink: "https://github.com/Jayjeet1013/LandJobber",
+      description: "Explore Job Opportunities with LandJobber.",
+    },
   ];
 
   return (
@@ -194,7 +203,7 @@ const Portfolio = () => {
             ({ id, title, imageSrc, liveLink, githubLink, description }) => (
               <div
                 key={id}
-                className="flex flex-col justify-between bg-green-700 p-4 rounded-lg shadow-lg "
+                className="flex flex-col justify-between bg-black border p-4 rounded-lg shadow-lg "
               >
                 <a href={liveLink} target="_blank" rel="noopener noreferrer">
                   <div className="overflow-hidden rounded-lg">
@@ -238,7 +247,7 @@ const Portfolio = () => {
         </div>
 
         {/* Freelance Projects */}
-        <h3 className="text-3xl md:text-5xl tracking-wide uppercase text-gray-200 font-semibold mt-16">
+        <h3 className="text-3xl md:text-5xl tracking-wide uppercase text-gray-200 font-semibold mt-16  md:mt-32">
           Freelance Projects
         </h3>
         <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -248,7 +257,7 @@ const Portfolio = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col justify-between bg-green-700 p-4 rounded-lg shadow-lg "
+              className="flex flex-col justify-between bg-black border p-4 rounded-lg shadow-lg "
             >
               <div className="overflow-hidden rounded-lg">
                 <Image

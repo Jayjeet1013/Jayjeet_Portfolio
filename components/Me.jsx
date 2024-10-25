@@ -10,7 +10,7 @@ const Me = () => {
           Me
         </h2>
 
-        <div className="bg-green-900 p-8 rounded-lg shadow-lg mb-12 ">
+        <div className="bg-black border p-8 rounded-lg shadow-lg mb-12 ">
           <p className="text-lg md:text-xl leading-relaxed">
             Hey there! 👋 I&apos;m Jayjeet Kumar, a passionate frontend
             developer with a knack for crafting seamless user experiences. 🌐✨

@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { FaBriefcase } from "react-icons/fa";
-
 import html from "../public/assets/experience/html.png";
 import css from "../public/assets/experience/css.png";
 import github from "../public/assets/experience/github.png";
@@ -18,7 +17,7 @@ const experiences = [
   { id: 1, title: "HTML", src: html },
   { id: 2, title: "CSS", src: css },
   { id: 3, title: "JavaScript", src: javascript },
-  { id: 4, title: "Solidity", src: solidity },
+  // { id: 4, title: "Solidity", src: solidity },
   { id: 5, title: "Git & GitHub", src: github },
   { id: 6, title: "React", src: react },
   { id: 7, title: "Node.js", src: node },
@@ -38,7 +37,7 @@ const Experience = () => {
         </h2>
         <div className="space-y-12 mb-12">
           {/* AuraUI Experience */}
-          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
+          <div className="bg-black border p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">AuraUI</h3>
             <p className="text-gray-100 font-semibold mb-2">
               Frontend Web Developer
@@ -57,7 +56,7 @@ const Experience = () => {
           </div>
 
           {/* Kyte Experience */}
-          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
+          <div className="bg-black border p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">Kyte</h3>
             <p className="text-gray-100 font-semibold mb-2">
               Frontend Web Developer Intern
@@ -74,7 +73,7 @@ const Experience = () => {
           </div>
 
           {/* Headstarter Experience */}
-          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
+          <div className="bg-black border p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">Headstarter</h3>
             <p className="text-gray-100 font-semibold mb-2">
               Software Engineer Fellow
@@ -98,7 +97,7 @@ const Experience = () => {
           </div>
 
           {/* Freelance Experience */}
-          <div className="bg-green-700 p-6 rounded-lg shadow-lg">
+          <div className="bg-black border p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">
               Freelance Frontend Developer
             </h3>
@@ -130,7 +129,7 @@ const Experience = () => {
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
-              className="flex flex-col items-center p-4 bg-green-700 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 "
+              className="flex flex-col items-center p-4 bg-black border rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 "
             >
               <Image
                 src={src}

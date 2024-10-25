@@ -8,12 +8,12 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full bg-black text-white py-16">
       <div className="max-w-screen-xl mx-auto px-8 md:px-16">
-        <h2 className="text-5xl md:text-7xl  font-bold text-green-500 tracking-wider uppercase text-center mb-12">
+        <h2 className="text-5xl md:text-7xl  font-bold  tracking-wider uppercase text-center mb-12">
           Contact
         </h2>
 
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/2 rounded-xl bg-green-900 p-6 shadow-lg ">
+          <div className="w-full md:w-1/2 rounded-xl bg-black border p-6 shadow-lg ">
             <Image
               src={contactus}
               alt="Contact Us"
@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 bg-green-900 rounded-xl p-6 shadow-lg ">
+          <div className="w-full md:w-1/2 bg-black border rounded-xl p-6 shadow-lg ">
             <h3 className="text-xl font-bold  mb-4">Send Us a Message</h3>
             <form
               action="https://getform.io/f/3db9af78-b338-4bbf-ae98-d6edc0ce7744"
