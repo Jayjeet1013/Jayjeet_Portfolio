@@ -75,7 +75,7 @@ export default function Home() {
         <HomePage />
         <Portfolio />
         <Experience />
-        {/* <Me /> */}
+        <Me /> 
         <Contact />
         <Footer />
       </div>

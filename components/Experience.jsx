@@ -29,7 +29,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="w-full bg-black text-white py-32">
+    <div id="experience" className="w-full bg-black text-white py-12">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
           <FaBriefcase className="inline-block mr-3 text-blue-500" />
@@ -40,7 +40,7 @@ const Experience = () => {
           <div className="bg-black border p-6 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-2">AuraUI</h3>
             <p className="text-gray-100 font-semibold mb-2">
-              Frontend Web Developer
+             Co-Creator & Frontend Web Developer
             </p>
             <p className="text-gray-100 mb-4">May 2024 - Present</p>
             <ul className="list-disc pl-5 space-y-2">
@@ -52,23 +52,6 @@ const Experience = () => {
               <li>
                 Ensured full responsiveness for a seamless user experience.
               </li>
-            </ul>
-          </div>
-
-          {/* Kyte Experience */}
-          <div className="bg-black border p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-2">Kyte</h3>
-            <p className="text-gray-100 font-semibold mb-2">
-              Frontend Web Developer Intern
-            </p>
-            <p className="text-gray-100 mb-4">Dec 2023 - Feb 2024</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>
-                Lead efforts in responsive design, ensuring optimal user
-                experiences.
-              </li>
-              <li>Utilized Tailwind CSS for styling.</li>
-              <li>Built user interfaces with Material UI.</li>
             </ul>
           </div>
 
@@ -121,8 +104,25 @@ const Experience = () => {
           </div>
         </div>
 
+        {/* Kyte Experience */}
+        <div className="bg-black border p-6 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-semibold mb-2">Kyte</h3>
+          <p className="text-gray-100 font-semibold mb-2">
+            Frontend Web Developer Intern
+          </p>
+          <p className="text-gray-100 mb-4">Dec 2023 - Feb 2024</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>
+              Lead efforts in responsive design, ensuring optimal user
+              experiences.
+            </li>
+            <li>Utilized Tailwind CSS for styling.</li>
+            <li>Built user interfaces with Material UI.</li>
+          </ul>
+        </div>
+
         {/* Skills Section */}
-        <h2 className="text-3xl md:text-4xl mb-6 md:mb-12 tracking-wider uppercase text-white font-bold text-center">
+        <h2 className="text-3xl md:text-4xl my-6 md:my-12 tracking-wider uppercase text-white font-bold text-center">
           Skills
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">

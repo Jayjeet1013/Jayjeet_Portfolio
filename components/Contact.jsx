@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import contactus from "../public/assets/contactus.jpg";
+import contactus from "../public/assets/contact.jpg";
 import Link from "next/link";
 import { FaInstagram, FaGithub, FaTwitter, FaLinkedin, FaGitSquare, FaGithubSquare } from "react-icons/fa";
 

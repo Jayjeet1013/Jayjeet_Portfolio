@@ -4,53 +4,52 @@ import { MdExpandMore } from "react-icons/md";
 
 const Me = () => {
   return (
-    <div id="me" className="w-full bg-black text-white py-24">
+    <div id="me" className="w-full bg-black text-white py-20">
       <div className="max-w-screen-xl mx-auto px-8 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl font-bold text-green-500 tracking-wider uppercase mb-8">
+        <h2 className="text-5xl md:text-7xl text-center font-bold text-white tracking-wider uppercase mb-8">
           Me
         </h2>
 
         <div className="bg-black border p-8 rounded-lg shadow-lg mb-12 ">
           <p className="text-lg md:text-xl leading-relaxed">
-            Hey there! 👋 I&apos;m Jayjeet Kumar, a passionate frontend
-            developer with a knack for crafting seamless user experiences. 🌐✨
+            Hey there! 👋 I&apos;m Jayjeet Kumar, a frontend developer with
+            experience in building modern, responsive web applications using
+            technologies like React.js, Next.js, and Tailwind CSS. I graduated
+            in July 2024 with a B.Tech in Computer Science and Engineering from
+            Amity University and have worked on several projects that have
+            helped me improve my skills. 🌐✨
             <br />
             <br />
-            💻 Currently honing my skills in the ever-evolving world of frontend
-            development, I&apos;ve got an insatiable curiosity for cutting-edge
-            technologies. 🚀
+            💻 One project I&apos;m proud of is AuraUI, a UI component library that
+            helps developers build websites faster by providing reusable,
+            customizable components. I&apos;m also working on Web3Campus, a platform
+            aimed at teaching people about decentralized web technologies, where
+            I use Next.js and MongoDB for scalability and responsiveness. 🚀
             <br />
             <br />
-            🔗 Exciting times ahead as I embark on a journey to unravel the
-            mysteries of Blockchain, Web3, and AI. 🌟 Eager to merge the worlds
-            of sleek design and innovative tech to create digital experiences
-            that leave a lasting impression.
+            🔗 I&apos;ve gained practical experience through roles like the Software
+            Engineer Fellow at Headstarter, where I built SaaS products and a
+            fitness AI customer support agent. At Kyte, I worked as a Frontend
+            Developer to create responsive UI components using Material UI and
+            Tailwind CSS.
             <br />
             <br />
-            🤖 Join me as I delve into the realms of artificial intelligence,
-            explore the decentralized wonders of Web3, and decipher the secrets
-            of blockchain technology. 🌐💡
+            🤖 I&apos;ve participated in hackathons, winning the Polygon
+            Pool Prize at the Road to Web3 Hackathon. I&apos;m passionate about Web3
+            and AI and always eager to learn new technologies.🌐💡
             <br />
             <br />
-            🌈 Always up for a challenge, I&apos;m on a mission to blend
-            creativity with the power of emerging technologies. Let&apos;s
-            connect, collaborate, and build the future together! 🚀👨‍💻
+            🌈 In short, I&apos;m a frontend developer focused on building
+            user-friendly, scalable applications, with a strong interest in new
+            technologies and innovation. 🚀👨‍💻
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <Link href="/resume.pdf" target="_blank" download>
-            <div className="group flex items-center gap-2 bg-green-900 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="group flex items-center gap-2 border text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
               Resume
-              <span className="transition-transform transform group-hover:rotate-0 -rotate-90 duration-200 ease-in">
-                <MdExpandMore size={25} />
-              </span>
-            </div>
-          </Link>
-          <Link href="/#projects">
-            <div className="group flex items-center gap-2 bg-green-900 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out">
-              Portfolio
-              <span className="transition-transform transform group-hover:rotate-0 -rotate-90 duration-200 ease-in">
+              <span className="transition-transform transform group-hover:rotate-180 -rotate-90 duration-200 ease-in">
                 <MdExpandMore size={25} />
               </span>
             </div>
