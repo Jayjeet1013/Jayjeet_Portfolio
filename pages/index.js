@@ -53,7 +53,11 @@ export default function Home() {
           content="Explore the portfolio of Jayjeet Kumar, showcasing projects and skills in modern web technologies like React, Next.js, and Web3."
         />
         <meta name="twitter:image" content="/assets/avatar.webp" />
-
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9825697349434410"
+          crossorigin="anonymous"
+        ></script>
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -75,7 +79,7 @@ export default function Home() {
         <HomePage />
         <Portfolio />
         <Experience />
-        <Me /> 
+        <Me />
         <Contact />
         <Footer />
       </div>
