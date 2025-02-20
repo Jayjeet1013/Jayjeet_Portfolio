@@ -36,7 +36,7 @@ const Navbar = () => {
     },
     // {
     //   id: 4,
-    //   link: "me",
+    //   link: "Resume",
     // },
     {
       id: 5,
@@ -65,6 +65,15 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              download
+              rel="noreferrer noopener"
+              className="ml-10 text-md uppercase cursor-pointer duration-200 ease-out hover:scale-105 hover:text-green-500 tracking-wider "
+            >
+              Hire Me
+            </a>
           </ul>
 
           {!navigation && (
@@ -125,25 +134,27 @@ const Navbar = () => {
             </ul>
             <div>
               <div className="grid grid-cols-2 mx-auto w-4/5 gap-10 ">
-              <Link href='https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/' target="_blank" >
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
-                <FaLinkedin size={25} />
-             
-              </div>
-              </Link>
-              <Link href='https://twitter.com/Jayjeet_100' target="_blank">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaTwitter size={25} />
-              </div>
-              </Link>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaInstagram size={25} />
-              </div>
-              <Link href='https://github.com/Jayjeet1013' target="_blank">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
-                <FaGithub size={25} />
-              </div>
-              </Link>
+                <Link
+                  href="https://www.linkedin.com/in/jayjeet-kumar-71a7751ba/"
+                  target="_blank"
+                >
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200  p-3 cursor-pointer ">
+                    <FaLinkedin size={25} />
+                  </div>
+                </Link>
+                <Link href="https://twitter.com/Jayjeet_100" target="_blank">
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                    <FaTwitter size={25} />
+                  </div>
+                </Link>
+                <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                  <FaInstagram size={25} />
+                </div>
+                <Link href="https://github.com/Jayjeet1013" target="_blank">
+                  <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-3 cursor-pointer ">
+                    <FaGithub size={25} />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
