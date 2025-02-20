@@ -125,7 +125,7 @@ const Experience = () => {
         <h2 className="text-3xl md:text-4xl my-6 md:my-12 tracking-wider uppercase text-white font-bold text-center">
           Skills
         </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
           {experiences.map(({ id, title, src }) => (
             <div
               key={id}
